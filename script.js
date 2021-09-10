@@ -76,10 +76,12 @@ window.addEventListener("load", () => {
           });
         });
     });
-
     body.appendChild(container);
     container.appendChild(locationText);
     container.appendChild(temperature);
     container.appendChild(description);
+  }
+  if (temperature.textContent == "") {
+    temperature.textContent = "Please Enable Location";
   }
 });
